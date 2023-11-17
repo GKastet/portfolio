@@ -7,8 +7,7 @@ const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const ContactsPage = lazy(() => import("./pages/ContactsPage/ContactsPage"));
 
 function App() {
-  return (
-    <>
+  return (    
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -17,8 +16,7 @@ function App() {
             <Route path="*" element={<Navigate to="/" />}></Route>
           </Route>
         </Routes>
-      </Suspense>
-    </>
+      </Suspense>    
   );
 }
 
