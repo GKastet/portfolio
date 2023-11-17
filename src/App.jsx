@@ -13,6 +13,7 @@ const ContactsPage = lazy(() => import("./pages/ContactsPage/ContactsPage"));
 
 function App() {
   return (
+    
     <Suspense fallback={<Loader />}>
       {/* <Layout/> */}
       <Routes>
@@ -23,6 +24,7 @@ function App() {
         </Route>
       </Routes>
     </Suspense>
+    
   );
 }
 
