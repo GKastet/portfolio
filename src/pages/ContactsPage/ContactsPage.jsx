@@ -18,7 +18,7 @@ const ContactsPage = () => {
         rel="noreferrer noopener">
         {phone.text}
       </a>
-      <Link to="/">home</Link>
+      <Link to="/portfolio">home</Link>
     </>
   );
 };
