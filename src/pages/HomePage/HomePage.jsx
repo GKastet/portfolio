@@ -6,7 +6,7 @@ const HomePage = () => {
       
       <div>HomePage</div>
       <h2 style={{color: "var(--pink-color)"}}>Home</h2>
-      <a href="/portfolio/contacts">contacts</a>
+      <a href="/contacts">contacts</a>
     </>
   );
 };
