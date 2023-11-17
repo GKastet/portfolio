@@ -1,5 +1,6 @@
 
 const HomePage = () => {
+  console.log(123);
   return (
     <>
       
