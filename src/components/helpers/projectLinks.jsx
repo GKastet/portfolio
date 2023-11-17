@@ -1,6 +1,4 @@
-export const projectLinks = [
-    {
-        name: '',
-        link: '',
+export const projectLinks = {        
+        school: 'gkastet.github.io/school/',
+        ITArt: 'gkastet.github.io/ITArt/',
     }
-]
