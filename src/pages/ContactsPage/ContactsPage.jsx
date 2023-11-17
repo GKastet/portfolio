@@ -19,7 +19,7 @@ const ContactsPage = () => {
         {phone.text}
       </a>
       <Link to="/portfolio">home</Link>
-      {/* <Link to="/">home</Link> */}
+      
     </>
   );
 };

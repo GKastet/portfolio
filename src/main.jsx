@@ -4,8 +4,8 @@ import "./styles/index.css";
 //import { RouterProvider, createBrowserRouter } from "react-router-dom";
 // import HomePage from "./pages/HomePage/HomePage.jsx";
 // import ContactsPage from "./pages/ContactsPage/ContactsPage.jsx";
-import { BrowserRouter, HashRouter } from "react-router-dom";
-
+//import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 // const router = createBrowserRouter([
 //   {
@@ -29,16 +29,13 @@ import { BrowserRouter, HashRouter } from "react-router-dom";
 // ])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  // <React.StrictMode>
-  // <BrowserRouter basename="/portfolio">
+  // <React.StrictMode>  
   // <RouterProvider router={router} />  
-  <HashRouter>
+  <HashRouter basename={import.meta.env.BASE_URL}>
     <App />
-
   </HashRouter>
   // <BrowserRouter basename={import.meta.env.BASE_URL}>
   //   <App />
   // </BrowserRouter>
-  // </React.StrictMode>,
-  // <BrowserRouter>
+  // </React.StrictMode>,  
 );
