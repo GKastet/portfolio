@@ -1,5 +1,5 @@
 import { contacts } from "../../components/helpers/contacts";
-
+import { Link } from "react-router-dom";
 const ContactsPage = () => {
   console.log(contacts);
   const { email, phone } = contacts;
@@ -18,7 +18,7 @@ const ContactsPage = () => {
         rel="noreferrer noopener">
         {phone.text}
       </a>
-      <a href="/portfolio">home</a>
+      <Link to="/">home</Link>
     </>
   );
 };
