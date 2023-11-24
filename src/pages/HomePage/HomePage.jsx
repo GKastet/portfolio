@@ -1,17 +1,16 @@
-import { Link } from "react-router-dom";
+import { PageWrapper } from "../../styles/CommonUsedTags";
+import SectionHero from "../../components/HomePageSections/SectionHero/SectionHero";
+
+
 const HomePage = () => {
-  console.log(123);
+  
   return (
-    <>
+    <PageWrapper>      
+      <SectionHero/>    
       
-      <div>HomePage</div>
-      <h2 style={{color: "var(--pink-color)"}}>Home</h2>
-      <Link to="/contacts">contacts</Link>
       
-    </>
+    </PageWrapper>
   );
 };
 
 export default HomePage;
-//By Paminus Murungi
-// https://www.figma.com/community/file/1124669212090570174/software-developer-portfolio
