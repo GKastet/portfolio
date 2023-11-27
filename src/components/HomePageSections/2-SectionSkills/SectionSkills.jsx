@@ -1,5 +1,6 @@
 import { SectionS } from "../../../styles/CommonUsedTags";
 import { skills } from "../../helpers/skills";
+import SkillImage from '../../../images/skills/skills-svg.svg'
 import {
   ImgThumbSkills,
   SectionBox,
@@ -9,7 +10,7 @@ import {
 } from "./SectionSkillsStyled";
 
 const SectionSkills = () => { 
-  console.log(skills.svg);
+  // console.log(skills.svg);
   return (
     <SectionS className="skills"  id="skills">
       <SectionTitle>Skills</SectionTitle>
@@ -32,7 +33,7 @@ const SectionSkills = () => {
         </SkillsBox>
         <ImgThumbSkills>
           <img
-            src="../../../../imgs/skills/skills-svg.svg"
+            src={SkillImage}
             alt="skills image"
           />
         </ImgThumbSkills>

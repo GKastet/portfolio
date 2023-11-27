@@ -1,13 +1,14 @@
 // import { Link } from "react-router-dom";
 import { Link} from 'react-scroll';
 import { HeaderS, HeaderBox, LogoLink, SectionS, NavLinkBox, NavLinkS } from "./HeaderStyled";
+import LogoPortfolio from '../../../public/portfolio.svg'
 
 const Header = () => {
   return (
     <HeaderS>
       <HeaderBox>        
           <LogoLink to="/">
-            <img src="../../../public/portfolio.svg" alt="logo"/>
+            <img src={LogoPortfolio} alt="logo"/>
             <h2>KG</h2>
             <div>
               <p>Konstantin Goncharenko</p>
