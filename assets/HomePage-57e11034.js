@@ -1,1 +1,0 @@
-import{j as o,L as e}from"./index-42629e33.js";const r=()=>(console.log(123),o.jsxs(o.Fragment,{children:[o.jsx("div",{children:"HomePage"}),o.jsx("h2",{style:{color:"var(--pink-color)"},children:"Home"}),o.jsx(e,{to:"/contacts",children:"contacts"})]}));export{r as default};
