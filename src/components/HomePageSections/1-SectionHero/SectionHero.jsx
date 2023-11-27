@@ -1,4 +1,5 @@
-import { FotoIntroduction, ImgThumb, PhotoSVG, SectionS, TextIntroduction } from "./SectionHeroStyled";
+import { SectionS } from "../../../styles/CommonUsedTags";
+import { FotoIntroduction, ImgThumb, PhotoSVG, TextIntroduction } from "./SectionHeroStyled";
 
 
 const SectionHero = () => {

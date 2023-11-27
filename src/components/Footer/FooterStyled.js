@@ -39,6 +39,7 @@ export const SocialBox = styled.div`
   width: 300px;
   h3 {
     margin-bottom: 34px;
+    text-align: center;
     font-size: 20px;
     font-weight: 500;
   }
@@ -69,6 +70,7 @@ export const GitBox = styled.div`
   width: 300px;
   h3 {
     margin-bottom: 34px;
+    text-align: center;
     font-size: 20px;
     font-weight: 500;
   }
@@ -77,6 +79,7 @@ export const GitBox = styled.div`
 export const GitLink = styled(Link)`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   color: var(--text-color-white);
   fill: var(--fill-color-white);

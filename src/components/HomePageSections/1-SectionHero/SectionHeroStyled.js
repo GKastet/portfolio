@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-export const SectionS = styled.section`
-  outline: 1px solid green;
-  display: flex;
-  flex-direction: column;
+// export const SectionS = styled.section`
+//   outline: 1px solid green;
+//   display: flex;
+//   flex-direction: column;
 
-  @media (min-width: 744px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-`;
+//   @media (min-width: 744px) {
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// `;
 
 export const TextIntroduction = styled.div`
   outline: 1px solid red;

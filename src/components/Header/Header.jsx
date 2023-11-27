@@ -1,3 +1,5 @@
+// import { Link } from "react-router-dom";
+import { Link} from 'react-scroll';
 import { HeaderS, HeaderBox, LogoLink, SectionS, NavLinkBox, NavLinkS } from "./HeaderStyled";
 
 const Header = () => {
@@ -13,9 +15,9 @@ const Header = () => {
             </div>
           </LogoLink>        
         <SectionS>
-            <p>Skills</p>
-            <p>Projects</p>
-            <p>Mail me</p>
+            <Link to="skills" smooth={true} duration={500}>Skills</Link>
+            <Link to="projects" smooth={true} duration={500}>Projects</Link>
+            <Link to="mailme" smooth={true} duration={500}>Mail me</Link>
         </SectionS>
         <NavLinkBox>
           <NavLinkS to='/'>Main</NavLinkS>

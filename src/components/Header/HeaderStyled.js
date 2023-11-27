@@ -53,13 +53,25 @@ export const SectionS = styled.div`
   /* outline: 1px solid green; */
   display: flex;
   gap: 10px;
-  p{
-    cursor: pointer;
+  a{
+    cursor: pointer;    
   }
   @media (min-width: 744px) {
     font-size: 18px;
   }
 `;
+
+// export const SectionS = styled.div`
+//   /* outline: 1px solid green; */
+//   display: flex;
+//   gap: 10px;
+//   p{
+//     cursor: pointer;
+//   }
+//   @media (min-width: 744px) {
+//     font-size: 18px;
+//   }
+// `;
 
 export const NavLinkBox = styled.div`
   /* outline: 1px solid green; */
