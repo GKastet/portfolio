@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Wave from '../../images/wave.svg'
-import Wave2 from '../../../public/wave.svg'
 
 export const FooterS = styled.footer`
   outline: 1px solid red;
@@ -13,8 +12,7 @@ export const FooterS = styled.footer`
   align-items: center;
   background-color: var(--background-main);
   background-color: transparent;
-  /* background-image: linear-gradient(to bottom, var(--background-header) , var(--background-main) 50%); */
-  /* background-image: url("../../../public/wave.svg"); */
+  /* background-image: linear-gradient(to bottom, var(--background-header) , var(--background-main) 50%); */  
   /* background-image: url("../../images/wave.svg"); */
   background-image: url(${Wave});
   /* background-image: url("../../../imgs/wave-mobile.svg"); */
