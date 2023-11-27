@@ -1,6 +1,7 @@
 import { SectionS } from "../../../styles/CommonUsedTags";
 import { FotoIntroduction, ImgThumb, PhotoSVG, TextIntroduction } from "./SectionHeroStyled";
-import MyFoto from '../../../images/foto-portfolioW.webp'
+import MyFoto from '../../../images/foto/foto-portfolioW.webp'
+import ZigZag from '../../../images/foto/zigzags.svg'
 
 
 const SectionHero = () => {
@@ -21,7 +22,7 @@ const SectionHero = () => {
             <img src={MyFoto} alt="foto Goncharenko" />
         </ImgThumb>
         <PhotoSVG className="zigZag">
-            <img src="../../../../imgs/zigzags.svg" alt="ZigZag" />
+            <img src={ZigZag} alt="ZigZag" />
         </PhotoSVG>
         <PhotoSVG className="plus">
             <img src="../../../../imgs/plus.svg" alt="plus" />
