@@ -9,7 +9,7 @@ import {
 } from "./SectionSkillsStyled";
 
 const SectionSkills = () => { 
-  
+  console.log(skills.svg);
   return (
     <SectionS className="skills"  id="skills">
       <SectionTitle>Skills</SectionTitle>
@@ -22,6 +22,7 @@ const SectionSkills = () => {
                 <li key={skill.name}>
                   <div>
                     <img src={skill.svg}></img>
+                    {/* {skill.svg} */}
                   </div>
                   <p>{skill.name}</p>
                 </li>
