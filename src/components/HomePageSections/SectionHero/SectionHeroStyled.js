@@ -18,7 +18,7 @@ export const TextIntroduction = styled.div`
   max-width: 298px;
 
   @media (min-width: 744px) {
-    max-width: 554px;
+    max-width: 500px;
   }
 `;
 export const FotoIntroduction = styled.div`
@@ -62,11 +62,23 @@ export const PhotoSVG = styled.div`
     width: 27px;
     height: 28px;
   }
-  &.cube{
+  &.cube {    
     right: 0px;
-    /* width: 27px;
-    height: 28px; */
+    width: 41px;
+    height: 41px;
   }
+  &.ellipse {    
+    left: 20px;
+    bottom: 20px;
+    width: 22px;
+    height: 22px;
+  }
+  &.circles {    
+    right: 0px;
+    bottom: 0px;
+    width: 120px;
+    height: 76px;
+  }  
   img {
     width: 100%;
     height: 100%;

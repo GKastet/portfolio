@@ -21,13 +21,17 @@ const SectionHero = () => {
             <img src="../../../../imgs/zigzags.svg" alt="ZigZag" />
         </PhotoSVG>
         <PhotoSVG className="plus">
-            <img src="../../../../imgs/plus.svg" alt="ZigZag" />
+            <img src="../../../../imgs/plus.svg" alt="plus" />
         </PhotoSVG>
         <PhotoSVG className="cube">
-            <img src="../../../../imgs/cube.svg" alt="ZigZag" />
+            <img src="../../../../imgs/cube.svg" alt="cube" />
         </PhotoSVG>
-        
-
+        <PhotoSVG className="ellipse">
+            <img src="../../../../imgs/Ellipse 11.svg" alt="ellipse" />
+        </PhotoSVG>
+        <PhotoSVG className="circles">
+            <img src="../../../../imgs/circles.svg" alt="circles" />
+        </PhotoSVG>
       </FotoIntroduction>
     </SectionS>
   );
