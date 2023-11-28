@@ -6,17 +6,23 @@ export const HeaderS = styled.header`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: var(--background-main);
+  background-color: var(--background-header-white);
+  /* background-color: #fff; */
   /* background-image: linear-gradient(to bottom, var(--background-header) , var(--background-main) 50%); */
   background-image: linear-gradient(
     to bottom,
     var(--background-header),
     var(--background-main)
   );
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 `;
 
 export const HeaderBox = styled.div`
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   padding: var(--page-padding-s);
   width: 100%;
   max-width: 500px;
@@ -76,6 +82,7 @@ export const SectionS = styled.div`
 export const NavLinkBox = styled.div`
   /* outline: 1px solid green; */
   display: flex;
+  align-items: center;
   gap: 10px;
   @media (min-width: 744px) {
     font-size: 18px;

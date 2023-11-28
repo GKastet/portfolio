@@ -11,19 +11,11 @@ export const FooterS = styled.footer`
   justify-content: center;
   align-items: center;
   background-color: var(--background-main);
-  background-color: transparent;
-  /* background-image: linear-gradient(to bottom, var(--background-header) , var(--background-main) 50%); */  
-  /* background-image: url("../../images/wave.svg"); */
-  background-image: url(${Wave});
-  /* background-image: url("../../../imgs/wave-mobile.svg"); */
+  background-color: transparent;  
+  background-image: url(${Wave});    
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 0%;
-  /* background-image: linear-gradient(
-    to bottom,
-    var(--background-main),
-    var(--background-header)    
-  ); */
+  background-position: 50% 0%;  
   color: var(--text-color-white);
 `;
 

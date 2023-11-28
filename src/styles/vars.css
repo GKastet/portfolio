@@ -10,6 +10,9 @@
     --background-main: rgba(29, 213, 208, 0.22);
     /* --background-header: #4f47c866; */
     --background-header: rgba(79, 71, 200, 0.4);
+    --background-header-white: rgba(255, 255, 255, 0.95);
+    --background-projects: #343D68;
+    
 
 
     /* --main-background: #171717;
@@ -25,12 +28,13 @@
     --text-color-navy: #343D68;
     --text-color-red: #E84949;
     --text-color-white: #fff;
-
+    
+    --fill-color-blue: #36369f;
     --fill-color-white: #fff;
     --fill-color-red: #E84949;
 
     --transition-general: 300ms linear;
-
+    --violet-color: #6636C5;
 
     /* --text-color-100: #F4F4F4;
     --text-color-30: #f4f4f44d;
@@ -39,16 +43,16 @@
     --text-color-60: #f4f4f499; */
 
     /* colors */
-    --accent-color: #205BF1;
+    /* --accent-color: #205BF1;
     --sky-color: #43A8D3;
     --violet-color: #6636C5;
     --pink-color: #E65368;
     --star-color-100: #F4F4F4;
-    --star-color-8:#F4F4F414;
+    --star-color-8:#F4F4F414; */
 
     /* border */
-    --border-color-60: #f4f4f499;
-    --border-color-30:#f4f4f44d;
+    /* --border-color-60: #f4f4f499;
+    --border-color-30:#f4f4f44d; */
 
     --page-padding-s: 0 5px;
     --page-padding-m: 0 15px;

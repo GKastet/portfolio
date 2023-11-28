@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-export const SectionTitle = styled.h2`
-  margin: auto;
-  color: var(--text-color-red);
-  margin-bottom: 30px;
-  font-size: 20px;
-  font-weight: bold;
-`;
-
 export const SectionBox = styled.div`
   width: 100%;
   display: flex;

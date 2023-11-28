@@ -1,22 +1,31 @@
-import { SectionS } from "../../../styles/CommonUsedTags";
+import PropTypes from "prop-types";
 import { skills } from "../../helpers/skills";
-import SkillImage from '../../../images/skills/skills-svg.svg'
+import { SectionS, SectionTitle } from "../../../styles/CommonUsedTags";
+import SkillImage from "../../../images/skills/skills-svg.svg";
 import {
   ImgThumbSkills,
-  SectionBox,
-  SectionTitle,
+  SectionBox,  
   SkillsBox,
   SkillsList,
 } from "./SectionSkillsStyled";
 
-const SectionSkills = () => { 
-  // console.log(skills.svg);
+const SectionSkills = ({ lang }) => {
   return (
-    <SectionS className="skills"  id="skills">
-      <SectionTitle>Skills</SectionTitle>
+    <SectionS className="skills" id="skills">
+      <SectionTitle>
+        {lang === "eng" && "Skills"}
+        {lang === "sk" && "Skily"}
+        {lang === "ua" && "Скіли"}
+      </SectionTitle>
       <SectionBox>
         <SkillsBox>
-          <p>I have an experience in the following web technologies:</p>
+          <p>
+            {lang === "eng" &&
+              "I have an experience in the following web technologies:"}
+            {lang === "sk" &&
+              "Mám skúsenosti s nasledujúcimi webovými technológiami:"}
+            {lang === "ua" && "У мене досвід у наступних веб технологіях:"}
+          </p>
           <SkillsList>
             {skills.map((skill) => {
               return (
@@ -28,18 +37,18 @@ const SectionSkills = () => {
                   <p>{skill.name}</p>
                 </li>
               );
-            })}            
+            })}
           </SkillsList>
         </SkillsBox>
         <ImgThumbSkills>
-          <img
-            src={SkillImage}
-            alt="skills image"
-          />
+          <img src={SkillImage} alt="skills image" />
         </ImgThumbSkills>
       </SectionBox>
     </SectionS>
   );
 };
 
+SectionSkills.propTypes = {
+  lang: PropTypes.string,
+};
 export default SectionSkills;
