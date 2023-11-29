@@ -28,13 +28,15 @@
     --text-color-navy: #343D68;
     --text-color-red: #E84949;
     --text-color-white: #fff;
+    --text-color-violet:rgb(85, 26, 139);
+    /* --text-color-violet: red; */
     
     --fill-color-blue: #36369f;
     --fill-color-white: #fff;
     --fill-color-red: #E84949;
 
     --transition-general: 300ms linear;
-    --violet-color: #6636C5;
+    
 
     /* --text-color-100: #F4F4F4;
     --text-color-30: #f4f4f44d;

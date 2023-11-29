@@ -6,6 +6,7 @@ export const HeaderS = styled.header`
   width: 100%;
   display: flex;
   justify-content: center;
+  color: var(--text-color-violet);
   background-color: var(--background-header-white);
   /* background-color: #fff; */
   /* background-image: linear-gradient(to bottom, var(--background-header) , var(--background-main) 50%); */
@@ -14,7 +15,7 @@ export const HeaderS = styled.header`
     var(--background-header),
     var(--background-main)
   );
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);  
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -43,7 +44,7 @@ export const LogoLink = styled(Link)`
   /* outline: 1px solid green; */
   display: flex;
   align-items: center;
-
+  /* color: var(--text-color-violet); */
   img {
     width: 38px;
     height: 38px;
@@ -53,14 +54,27 @@ export const LogoLink = styled(Link)`
     margin-right: 6px;
     /* color: var(--text-color-navy); */
   }
+  div {
+    transition: color var(--transition-general);
+  }
+  &:hover {
+    div {
+      color: var(--text-color-red);
+    }
+  }
 `;
 
 export const SectionS = styled.div`
   /* outline: 1px solid green; */
   display: flex;
   gap: 10px;
-  a{
-    cursor: pointer;    
+  a {
+    cursor: pointer;
+    color: var(--text-color-violet);
+    transition: color var(--transition-general);
+    &:hover {
+      color: var(--text-color-red);
+    }
   }
   @media (min-width: 744px) {
     font-size: 18px;
@@ -100,5 +114,4 @@ export const NavLinkS = styled(NavLink)`
   &.active {
     color: var(--text-color-red);
   }
-  
 `;

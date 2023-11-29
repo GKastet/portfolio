@@ -16,8 +16,7 @@ const SectionHero = () => {
         <h3>
           I’m Konstantin Goncharenko, a developer dedicated to making the world a better place
           one line of code at a time.
-        </h3>
-        {/* <button></button> */}
+        </h3>        
         <a href="mailto:goncharenko.k.mail@gmail.com">Contact me</a>
       </TextIntroduction>
       <FotoIntroduction>
