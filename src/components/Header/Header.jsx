@@ -8,7 +8,8 @@ import {
   NavLinkBox,
   NavLinkS,
 } from "./HeaderStyled";
-import LogoPortfolio from "../../../public/portfolio.svg";
+// import LogoPortfolio from "../../../public/portfolio.svg";
+import LogoPortfolio from "../../images/portfolio.svg";
 import SelectLang from "../SelectLang/SelectLang";
 
 const Header = ({ lang, changeLanguage }) => {

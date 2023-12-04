@@ -9,11 +9,14 @@ export const contacts = {
   },
   telegram: {
     telegram: "https://t.me/goncharenko_kostiantyn",
+    text: "@goncharenko_kostiantyn"
   },
   gitHub: {
     gitHubLink: "https://github.com/GKastet",
+    text: "GitHub"
   },
   linkedIn: {
     linkedInLink: "https://www.linkedin.com/in/konstantin-goncharenko/",
+    text: "LinkedIn"
   },
 };

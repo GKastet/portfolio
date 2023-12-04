@@ -11,10 +11,13 @@ export const PageWrapper = styled.main`
     flex-direction: column;
     gap: 70px;
   }
+  /* &.contactsPage {
+    display: flex;
+  } */
 `;
 
 export const SectionS = styled.section`
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   display: flex;
   flex-direction: column;
   padding: 0px 100px;
@@ -23,6 +26,7 @@ export const SectionS = styled.section`
   }
   &.projects{
     background-color: var(--background-projects);
+    padding: 20px 0;
   }
 
   @media (min-width: 744px) {
@@ -33,7 +37,7 @@ export const SectionS = styled.section`
 `;
 
 export const SectionTitle = styled.h2`
-  outline: 1px solid yellow;
+  /* outline: 1px solid yellow; */
   margin: auto;
   color: var(--text-color-red);
   margin-bottom: 30px;

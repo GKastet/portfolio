@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
-import { SectionS, SectionTitle } from "../../../styles/CommonUsedTags"
-import { ProjectItem } from "./SectionProjectsStyled";
-
+import { SectionS, SectionTitle } from "../../../../styles/CommonUsedTags"
+import ProjectsList from "../ProjectsList/ProjectsList";
 
 const SectionProjects = ({lang}) => {
   return (
@@ -11,12 +10,7 @@ const SectionProjects = ({lang}) => {
         {lang === "sk" && "Projecty"}
         {lang === "ua" && "Проекти"}
       </SectionTitle>
-      <ul>
-        <ProjectItem>
-
-        </ProjectItem>
-
-      </ul>
+      <ProjectsList lang={lang}/>      
     </SectionS>
   )
 }
