@@ -14,8 +14,8 @@ width: 40px;
 height: 40px;
 border-radius: 50%;
 background-color: transparent;
-border: 1px solid var(--text-color-navy);
-color: var(--text-color-navy);
+border: 1px solid var(--text-color-blue);
+color: var(--text-color-blue);
 transition: border var(--transition-general), color var(--transition-general);
 
 &:hover{

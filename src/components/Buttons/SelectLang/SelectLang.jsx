@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-import { languages } from "../helpers/languages";
+import { languages } from "../../helpers/languages";
 import {
   ButtonStyled,
   LangItem,

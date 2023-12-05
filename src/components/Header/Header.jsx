@@ -9,7 +9,7 @@ import {
   NavLinkS,
 } from "./HeaderStyled";
 import LogoPortfolio from "../../images/portfolio.svg";
-import SelectLang from "../SelectLang/SelectLang";
+import SelectLang from "../Buttons/SelectLang/SelectLang";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 

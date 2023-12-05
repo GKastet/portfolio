@@ -20,8 +20,11 @@ export const SectionS = styled.section`
   /* outline: 1px solid green; */
   display: flex;
   flex-direction: column;
-  padding: 0px 100px;
-  &.skills,
+  align-items: center;
+  gap: 20px;
+  /* padding: 0px 100px; */
+
+  /* &.skills,
   &.docs,
   &.projects {
     flex-direction: column;
@@ -29,12 +32,21 @@ export const SectionS = styled.section`
   &.projects {
     background-color: var(--background-projects);
     padding: 20px 0;
-  }
+  } */
 
   @media (min-width: 744px) {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+  }
+  @media (min-width: 1160px) {
+    gap: 20px;
+    /* flex-direction: row;
+    justify-content: center; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
   }
 `;
 
