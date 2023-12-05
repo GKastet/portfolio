@@ -1,73 +1,30 @@
-import { contacts } from "../../components/helpers/contacts";
-import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import { PageWrapper, SectionTitle } from "../../styles/CommonUsedTags";
-import { ContactItem, ContactsWrapper } from "./ContactsPageStyled";
-import { CgMail } from "react-icons/cg";
-import { MdPermPhoneMsg } from "react-icons/md";
-import { FaLinkedin, FaTelegram, FaGithub } from "react-icons/fa";
+import { AddressBox, ContactsWrapper } from "./ContactsPageStyled";
 
-const ContactsPage = () => {
-  console.log(contacts);
-  const { email, phone, telegram, linkedIn, gitHub } = contacts;
+import AddressContacts from "../../components/AddressContacts/AddressContacts";
+import AddressImg from "../../components/AddressImg/AddressImg";
+
+const ContactsPage = ({ lang }) => {
   return (
     <PageWrapper>
       <ContactsWrapper>
-        <SectionTitle>My Contacts</SectionTitle>
-        {/* <h2 style={{margin: "auto"}}>QQQQ</h2> */}
-        <address>
-          <ul>
-            <ContactItem>
-              <Link to={`mailto:${email.email}`}>
-                <CgMail />
-                <p>{email.text}</p>
-              </Link>
-            </ContactItem>
-            <ContactItem>
-              <Link
-                to={`tel:${phone.number}`}
-                type="phone"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <MdPermPhoneMsg />
-                <p>{phone.text}</p>
-              </Link>
-            </ContactItem>
-            <ContactItem>
-              <Link
-                to={`${telegram.telegram}`}
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <FaTelegram />
-                <p>{telegram.text}</p>
-              </Link>
-            </ContactItem>
-            <ContactItem>
-              <Link
-                to={`${linkedIn.linkedInLink}`}
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <FaLinkedin />
-                <p>{linkedIn.text}</p>
-              </Link>
-            </ContactItem>
-            <ContactItem>
-              <Link
-                to={`${gitHub.gitHubLink}`}
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <FaGithub />
-                <p>{gitHub.text}</p>
-              </Link>
-            </ContactItem>
-          </ul>
-        </address>
+        <SectionTitle>
+          {lang === "eng" && "My Contacts"}
+          {lang === "sk" && "Moje kontakty"}
+          {lang === "ua" && "Мої контакти"}
+        </SectionTitle>
+        <AddressBox>
+          <AddressImg />
+          <AddressContacts />
+        </AddressBox>
       </ContactsWrapper>
     </PageWrapper>
   );
+};
+
+ContactsPage.propTypes = {
+  lang: PropTypes.string,
 };
 
 export default ContactsPage;

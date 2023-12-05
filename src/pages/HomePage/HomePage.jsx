@@ -6,8 +6,7 @@ import SectionProjects from "../../components/HomePageSections/3-SectionProjects
 import SectionDocs from "../../components/HomePageSections/4-SectionDocs/SectionDocs";
 
 
-const HomePage = ({lang}) => {
-  // console.log('lang: ', lang);
+const HomePage = ({lang}) => {  
   
   return (
     <PageWrapper className="homePage">      
