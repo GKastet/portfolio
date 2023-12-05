@@ -1,5 +1,5 @@
+import manContacts from "../../images/man-contacts.svg";
 import { ImgThumb } from "./AddressImgStyled";
-import manContacts from '../../images/man-contacts.svg'
 
 const AddressImg = () => {
   return (

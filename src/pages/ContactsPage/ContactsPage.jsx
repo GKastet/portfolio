@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
+import AddressImg from "../../components/AddressImg/AddressImg";
+import AddressContacts from "../../components/AddressContacts/AddressContacts";
 import { PageWrapper, SectionTitle } from "../../styles/CommonUsedTags";
 import { AddressBox, ContactsWrapper } from "./ContactsPageStyled";
-
-import AddressContacts from "../../components/AddressContacts/AddressContacts";
-import AddressImg from "../../components/AddressImg/AddressImg";
 
 const ContactsPage = ({ lang }) => {
   return (

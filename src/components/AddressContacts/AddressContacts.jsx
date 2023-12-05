@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { contacts } from "../../components/helpers/contacts";
 import { CgMail } from "react-icons/cg";
 import { MdPermPhoneMsg } from "react-icons/md";
 import { FaLinkedin, FaTelegram, FaGithub } from "react-icons/fa";
+import { contacts } from "../../components/helpers/contacts";
 import { ContactItem, ContactsList } from "./AddressContactsStyled";
 
 const AddressContacts = () => {
