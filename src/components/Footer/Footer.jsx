@@ -76,10 +76,10 @@ const Footer = ({ lang }) => {
         {lang === "ua" && <p>&copy; Усі права захищені, KG, 2023</p>}
 
         <p>
-          {lang === "eng" && 'Designed by'}
-          {lang === "sk" && 'Navrhol'}
-          {lang === "ua" && 'Дизайн створений'}
-          
+          {lang === "eng" && "Designed by"}
+          {lang === "sk" && "Navrhol"}
+          {lang === "ua" && "Дизайн створений"}
+
           <a
             href="mailto:pkmurungi.pm@gmail.com"
             type="email"

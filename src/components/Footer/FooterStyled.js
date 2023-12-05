@@ -3,20 +3,16 @@ import styled from "styled-components";
 import Wave from "../../images/wave.svg";
 import WaveMobile from "../../images/wave-mobile.svg";
 
-export const FooterS = styled.footer`
-  /* outline: 1px solid red; */
+export const FooterS = styled.footer`  
   width: 100%;
   height: 380px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* justify-content: space-evenly; */
   justify-content: flex-end;
   align-items: center;
   background-color: var(--background-main);
   background-color: transparent;
   background-image: url(${WaveMobile});
-  /* background-image: url(${Wave});     */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 0%;
@@ -24,21 +20,13 @@ export const FooterS = styled.footer`
 
   @media (min-width: 744px) {
     background-image: url(${Wave});
-    /* justify-content: center; */
-    justify-content: space-evenly
-    /* height: 444px; */
+    justify-content: space-evenly;
   }
-  /* @media (min-width: 1160px) {
-    background-image: url(${Wave});
-  } */
 `;
 
 export const FooterBox = styled.div`
-  /* outline: 1px solid red;  */
   width: 100%;
   max-width: 910px;
-  /* height: 100px; */
-  /* margin-top: 170px; */
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -151,5 +139,5 @@ export const BottomTextBox = styled.div`
   }
   @media (min-width: 744px) {
     margin-bottom: 0px;
-    }
+  }
 `;
