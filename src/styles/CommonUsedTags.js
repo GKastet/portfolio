@@ -5,7 +5,7 @@ export const PageWrapper = styled.main`
   margin-top: 50px;
   /* padding: 70px 70px; */
   padding: 70px 0px;
-  
+
   &.homePage {
     display: flex;
     flex-direction: column;
@@ -21,10 +21,12 @@ export const SectionS = styled.section`
   display: flex;
   flex-direction: column;
   padding: 0px 100px;
-  &.skills, &.docs, &.projects{
+  &.skills,
+  &.docs,
+  &.projects {
     flex-direction: column;
   }
-  &.projects{
+  &.projects {
     background-color: var(--background-projects);
     padding: 20px 0;
   }
@@ -44,4 +46,10 @@ export const SectionTitle = styled.h2`
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: bold;
+  &.pageContacts {
+    margin-bottom: 50px;
+    @media (min-width: 744px) {
+      margin-bottom: 70px;
+    }
+  }
 `;

@@ -16,7 +16,7 @@ export const ContactItem = styled.li`
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--fill-color-blue);
+    color: var(--text-color-blue);
     fill: var(--fill-color-blue);
     transition: fill var(--transition-general), color var(--transition-general);
     font-size: 18px;
@@ -26,8 +26,8 @@ export const ContactItem = styled.li`
     }
 
     &:hover {
+      color: var(--text-color-red);
       fill: var(--fill-color-red);
-      color: var(--fill-color-red);
       scale: 1.01;
     }
     @media (min-width: 1160px) {

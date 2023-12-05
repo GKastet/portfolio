@@ -71,9 +71,9 @@ const Footer = ({ lang }) => {
         </GitBox>
       </FooterBox>
       <BottomTextBox>
-        {lang === "eng" && <p>&copy; All rights reserved, KG, 2023</p>}
-        {lang === "sk" && <p>&copy; Všetky práva vyhradené, KG, 2023</p>}
-        {lang === "ua" && <p>&copy; Усі права захищені, KG, 2023</p>}
+        {lang === "eng" && <p>&copy; All rights reserved, GK, 2023</p>}
+        {lang === "sk" && <p>&copy; Všetky práva vyhradené, GK, 2023</p>}
+        {lang === "ua" && <p>&copy; Усі права захищені, GK, 2023</p>}
 
         <p>
           {lang === "eng" && "Designed by"}

@@ -8,7 +8,7 @@ const ContactsPage = ({ lang }) => {
   return (
     <PageWrapper>
       <ContactsWrapper>
-        <SectionTitle>
+        <SectionTitle className="pageContacts">
           {lang === "eng" && "My Contacts"}
           {lang === "sk" && "Moje kontakty"}
           {lang === "ua" && "Мої контакти"}
