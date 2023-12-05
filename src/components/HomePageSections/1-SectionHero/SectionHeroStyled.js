@@ -13,7 +13,7 @@ import styled from "styled-components";
 // `;
 
 export const TextIntroduction = styled.div`
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 100%;
   max-width: 320px;
   display: flex;
@@ -50,7 +50,7 @@ export const TextIntroduction = styled.div`
   }
 `;
 export const FotoIntroduction = styled.div`
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   position: relative;
   width: 100%;
   max-width: 320px;

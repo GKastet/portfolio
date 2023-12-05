@@ -17,19 +17,19 @@ export const PageWrapper = styled.main`
 `;
 
 export const SectionS = styled.section`
-  /* outline: 1px solid green; */
+  outline: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   /* padding: 0px 100px; */
 
-  /* &.skills,
+  &.skills,
   &.docs,
   &.projects {
     flex-direction: column;
   }
-  &.projects {
+  /* &.projects {
     background-color: var(--background-projects);
     padding: 20px 0;
   } */
