@@ -4,16 +4,15 @@ import { useEffect } from "react";
 import SectionHero from "../../components/HomePageSections/1-SectionHero/SectionHero";
 import SectionSkills from "../../components/HomePageSections/2-SectionSkills/SectionSkills";
 import SectionProjects from "../../components/HomePageSections/3-SectionProjects/SectionProjectsWrapper/SectionProjects";
-import SectionDocs from "../../components/HomePageSections/4-SectionDocs/SectionDocs";
+import SectionDocs from "../../components/HomePageSections/4-SectionDocs/SectionDocsWrapper/SectionDocs";
 import { PageWrapper } from "../../styles/CommonUsedTags";
+
 
 
 const HomePage = ({lang}) => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const isTablet = screenWidth >= 744;
-  const isDesktop = screenWidth >= 1160;
-
-  console.log('isDesktop: ', isDesktop);
+  // const isDesktop = screenWidth >= 1160;  
 
   const handleResize = () => {
     setScreenWidth(window.innerWidth);

@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { introduction } from "../../helpers/heroTexts";
 import { SectionBox, SectionS } from "../../../styles/CommonUsedTags";
 import {
   FotoIntroduction,
@@ -13,19 +14,32 @@ import Cube from "../../../images/foto/cube.svg";
 import Ellipse from "../../../images/foto/ellipse.svg";
 import Circles from "../../../images/foto/circles.svg";
 
-const SectionHero = ({ isTablet }) => {  
+const SectionHero = ({ lang, isTablet }) => {
+  const { title, myname, about } = introduction;
   return (
     <>
       <SectionS>
         {isTablet ? (
           <SectionBox>
             <TextIntroduction>
-              <h1>Hi👋, I’m a full-stack developer</h1>
+              <h1>
+                {lang === "eng" && title.eng}
+                {lang === "sk" && title.sk}
+                {lang === "ua" && title.ua}
+              </h1>
               <h3>
-                I’m Konstantin Goncharenko, a developer dedicated to making the
-                world a better place one line of code at a time.
+                {lang === "eng" && <span>{myname.eng}</span>}
+                {lang === "sk" && <span>{myname.sk}</span>}
+                {lang === "ua" && <span>{myname.ua}</span>}
+                {lang === "eng" && about.eng}
+                {lang === "sk" && about.sk}
+                {lang === "ua" && about.ua}
               </h3>
-              <a href="mailto:goncharenko.k.mail@gmail.com">Contact me</a>
+              <a href="mailto:goncharenko.k.mail@gmail.com">
+                {lang === "eng" && "Contact me"}
+                {lang === "sk" && "Kontaktujte ma"}
+                {lang === "ua" && "Зв'язатися зі мною"}
+              </a>
             </TextIntroduction>
             <FotoIntroduction>
               <ImgThumb>
@@ -72,23 +86,33 @@ const SectionHero = ({ isTablet }) => {
             </FotoIntroduction>
             <TextIntroduction>
               <h1>
-                Hi👋, I’m a <br />
-                Full-stack developer
+                {lang === "eng" && title.eng}
+                {lang === "sk" && title.sk}
+                {lang === "ua" && title.ua}
               </h1>
               <h3>
-                I’m <span>Konstantin Goncharenko</span>, a developer dedicated
-                to making the world a better place one line of code at a time.
+                {lang === "eng" && <span>{myname.eng}</span>}
+                {lang === "sk" && <span>{myname.sk}</span>}
+                {lang === "ua" && <span>{myname.ua}</span>}
+                {lang === "eng" && about.eng}
+                {lang === "sk" && about.sk}
+                {lang === "ua" && about.ua}
               </h3>
-              <a href="mailto:goncharenko.k.mail@gmail.com">Contact me</a>
+              <a href="mailto:goncharenko.k.mail@gmail.com">
+                {lang === "eng" && "Contact me"}
+                {lang === "sk" && "Kontaktujte ma"}
+                {lang === "ua" && "Зв'язатися зі мною"}
+              </a>
             </TextIntroduction>
           </SectionBox>
         )}
-        <div id="skills"/>
+        <div id="skills" />
       </SectionS>
     </>
   );
 };
 SectionHero.propTypes = {
+  lang: PropTypes.string.isRequired,
   isTablet: PropTypes.bool.isRequired,
 };
 

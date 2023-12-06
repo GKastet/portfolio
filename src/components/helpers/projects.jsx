@@ -2,6 +2,7 @@ import quizMasterImg from '../../images/projectsFoto/quiz-masterW.webp'
 import moneyGuardImg from '../../images/projectsFoto/money-guardW.webp'
 import bookShelfImg from '../../images/projectsFoto/book-shelfW.webp'
 
+
 export const projects = [
     {        
         id: 1,
@@ -9,7 +10,11 @@ export const projects = [
         img: quizMasterImg,
         imgAlt: "Quiz Master",
         descriptionEng: " Application where you can try any quiz or create own quiz. Adopted for desktop, tablet, mobile.",
-        roleEng: "Role: Programmer",
+        descriptionSk: "Aplikácia, kde si môžete vyskúšať akýkoľvek kvíz alebo vytvoriť vlastný kvíz. Prispôsobene pre desktop, tablet, mobil.",
+        descriptionUa: "Застосунок, в якому Ви можете спробувати будь-який квіз або створити власний. Адаптовано для десктопів, планшетів, мобільних пристроїв.",
+        roleEng: "Role: Devepoler",
+        roleSk: "Rola: Vývojár ",
+        roleUa: "Роль: Розробник",
         web: 'https://stepaniuk-den.github.io/quiz-master/',
         gitHub: 'https://github.com/Stepaniuk-Den/quiz-master'
     },
@@ -19,7 +24,11 @@ export const projects = [
         img: moneyGuardImg,
         imgAlt: "Money guard image",
         descriptionEng: "Application which helps to control your incomes and expenses, see statistics etc. Adopted for desktop, tablet, mobile.",
-        roleEng: "Role: Team lead and programmer",
+        descriptionSk: "Aplikácia, ktorá pomáha kontrolovať vaše príjmy a výdavky, vidieť štatistiky atď. Prispôsobene pre desktop, tablet, mobil.",
+        descriptionUa: "Застосунок, який допомагає контролювати Ваші надходження та витрати, бачити статистику. Адаптовано для десктопів, планшетів, мобільних пристроїв.",
+        roleEng: "Role: Team lead and developer",
+        roleSk: "Rola: Veduci tímu a vývojár",
+        roleUa: "Роль: Тім лід та розробник",
         web: 'https://gkastet.github.io/ITArt/register',
         gitHub: 'https://github.com/GKastet/ITArt'
     },
@@ -28,8 +37,12 @@ export const projects = [
         name: "Book shelf",
         img: bookShelfImg,
         imgAlt: "Book shelf image",
-        descriptionEng: "A website where you can choose a book, read short description, and visit a shop for buying. Adopted for desktop, tablet, mobile.",
-        roleEng: "Role: Team lead and programmer",
+        descriptionEng: "A website where you can choose a book, read short description, and visit a shop for buying. Adopted for desktop, tablet, mobile.",        
+        descriptionSk: "Web, kde si môžete vybrať knihu, prečítať si krátky popis a navštíviť obchod, kde si môžete kúpiť. Prispôsobene pre desktop, tablet, mobil.",
+        descriptionUa: "Вебсайт, на якому можна обрати книгу, прочитати короткий опис, відвідати крамницю для покупки. Адаптовано для десктопів, планшетів, мобільних пристроїв.",        
+        roleEng: "Role: Team lead and developer",
+        roleSk: "Rola: Veduci tímu a vývojár",
+        roleUa: "Роль: Тім лід та розробник",
         web: 'https://gkastet.github.io/Bookshelf/',
         gitHub: 'https://github.com/GKastet/Bookshelf'
     },

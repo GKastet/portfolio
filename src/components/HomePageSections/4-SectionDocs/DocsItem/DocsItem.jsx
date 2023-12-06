@@ -3,7 +3,7 @@ import { DocButtonsBox, DocItem, DocOptionsBox, ImgThumb } from "./DocsItemStyle
 import BtnDocModal from "../../../Buttons/BtnDocModal/BtnDocModal";
 import BtnDocLoad from "../../../Buttons/BtnDocLoad/BtnDocLoad";
 
-const DocsItem = ({ lang, doc }) => {
+const DocsItem = ({ lang, doc, setIsOpen }) => {
   const { docTitle, docImg, path } = doc;
   return (
     <DocItem key={path}>
@@ -15,7 +15,7 @@ const DocsItem = ({ lang, doc }) => {
         {lang === "sk" && <p>{docTitle.sk}</p>}
         {lang === "ua" && <p>{docTitle.ua}</p>}
         <DocButtonsBox>
-          <BtnDocModal />
+          <BtnDocModal setIsOpen={setIsOpen}/>
           <BtnDocLoad doc={doc} />
         </DocButtonsBox>
       </DocOptionsBox>
@@ -26,6 +26,7 @@ const DocsItem = ({ lang, doc }) => {
 DocsItem.propTypes = {
   lang: PropTypes.string.isRequired,
   doc: PropTypes.object.isRequired,
+  setIsOpen: PropTypes.func.isRequired,
 };
 
 export default DocsItem;

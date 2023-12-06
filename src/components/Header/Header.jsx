@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Link as ScrollLink} from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import {
   HeaderS,
   HeaderBox,
@@ -14,14 +14,14 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const Header = ({ lang, changeLanguage }) => {
-  const location = useLocation()
-  const pageLocation = location.pathname === '/'
+  const location = useLocation();
+  const pageLocation = location.pathname === "/";
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const isDesktop = screenWidth >= 1160;
 
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
-  };  
+  };
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
@@ -29,7 +29,7 @@ const Header = ({ lang, changeLanguage }) => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);  
+  }, []);
 
   return (
     <HeaderS>
@@ -43,16 +43,16 @@ const Header = ({ lang, changeLanguage }) => {
             {lang === "eng" && <p>Konstantin Goncharenko</p>}
             {lang === "sk" && <p>Konstantin Gončarenko</p>}
             {lang === "ua" && <p>Костянтин Гончаренко</p>}
-            <p>Full-stack developer</p>
+            <p>
+              {lang === "eng" && "Full-stack developer"}
+              {lang === "sk" && "Full-stack vývojár"}
+              {lang === "ua" && "Full-stack розробник"}
+            </p>
           </div>
         </LogoLink>
-        {(isDesktop&&pageLocation) && (
+        {isDesktop && pageLocation && (
           <SectionS>
-            <ScrollLink
-              to="skills"
-              smooth={true}
-              duration={500}              
-            >
+            <ScrollLink to="skills" smooth={true} duration={500}>
               {lang === "eng" && "Skills"}
               {lang === "sk" && "Skily"}
               {lang === "ua" && "Скіли"}

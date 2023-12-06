@@ -17,9 +17,8 @@ export const TextIntroduction = styled.div`
     }
   }
   a {
-    width: 100px;
     margin: auto;
-    padding: 10px;
+    padding: 10px 15px;
     text-align: center;
     background-color: var(--background-color-red);
     color: var(--text-color-white);
