@@ -1,21 +1,28 @@
 import PropTypes from "prop-types";
-import { SectionS, SectionTitle } from "../../../../styles/CommonUsedTags"
+import {
+  SectionBox,
+  SectionS,
+  SectionTitle,
+} from "../../../../styles/CommonUsedTags";
 import ProjectsList from "../ProjectsList/ProjectsList";
 
-const SectionProjects = ({lang}) => {
+const SectionProjects = ({ lang }) => {
   return (
-    <SectionS id="projects" className="projects">
+    <SectionS className="projects">
       <SectionTitle>
         {lang === "eng" && "Projects"}
         {lang === "sk" && "Projecty"}
         {lang === "ua" && "Проекти"}
       </SectionTitle>
-      <ProjectsList lang={lang}/>      
+      <SectionBox className="projectsbox">
+        <ProjectsList lang={lang} />
+      </SectionBox>
+      <div id="docs"/>
     </SectionS>
-  )
-}
+  );
+};
 
 SectionProjects.propTypes = {
-  lang: PropTypes.string,
+  lang: PropTypes.string,  
 };
-export default SectionProjects
+export default SectionProjects;

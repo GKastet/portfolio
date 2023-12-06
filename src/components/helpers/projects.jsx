@@ -33,6 +33,7 @@ export const projects = [
         web: 'https://gkastet.github.io/Bookshelf/',
         gitHub: 'https://github.com/GKastet/Bookshelf'
     },
+    
     // {        
     //     id: 1,
     //     name: "School",

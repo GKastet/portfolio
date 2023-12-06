@@ -14,7 +14,7 @@ import BtnDocLoad from "../../Buttons/BtnDocLoad/BtnDocLoad";
 const SectionDocs = ({ lang }) => {
   console.log(docs);
   return (
-    <SectionS id="docs" className="docs">
+    <SectionS className="docs">
       <SectionTitle>
         {lang === "eng" && "Documents"}
         {lang === "sk" && "Doklady"}

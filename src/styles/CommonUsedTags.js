@@ -19,6 +19,7 @@ export const PageWrapper = styled.main`
 export const SectionS = styled.section`
   /* outline: 1px solid green; */
   width: 100%;
+  padding: 20px 0 0;
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,6 +60,7 @@ export const SectionBox = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 30px;
+
   @media (min-width: 744px) {
     padding: 0 10px;
     flex-direction: row;
@@ -68,8 +70,9 @@ export const SectionBox = styled.div`
     &.skillsbox{
       gap: 10px;
     }
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    &.projectsbox{
+      display: block;
+    }    
   }
   @media (min-width: 1160px) {
     width: 100%;

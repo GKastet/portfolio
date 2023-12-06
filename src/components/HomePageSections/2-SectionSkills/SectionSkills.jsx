@@ -75,6 +75,7 @@ const SectionSkills = ({ lang, isTablet }) => {
           </SectionBox>
         </>
       )}
+      <div id="projects"/>
     </SectionS>
   );
 };

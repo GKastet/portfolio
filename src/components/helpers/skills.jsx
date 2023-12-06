@@ -18,6 +18,7 @@ import Responsive from '../../images/skills/responsive.svg'
 import VSCode from '../../images/skills/vscode.svg'
 import Bootstrap from '../../images/skills/bootstrap.svg'
 import Figma from '../../images/skills/figma.svg'
+import Swagger from '../../images/skills/swagger.svg'
 
 
 
@@ -102,10 +103,10 @@ export const skills = [
     name: "Figma",
     svg: Figma,
   },
-  // {
-  //     name: 'Postman',
-  //     svg: '../../../imgs/skills/postman.svg'
-  // },
+  {
+      name: 'Swagger',
+      svg: Swagger,
+  },
   // {
   //     name: 'Postman',
   //     svg: '../../../imgs/skills/postman.svg'

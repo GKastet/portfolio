@@ -31,7 +31,7 @@ const HomePage = ({lang}) => {
     <PageWrapper className="homePage">      
       <SectionHero lang={lang} isTablet={isTablet}/>
       <SectionSkills lang={lang} isTablet={isTablet}/>
-      {/* <SectionProjects lang={lang}/> */}
+      <SectionProjects lang={lang}/>
       {/* <SectionDocs lang={lang}/> */}
     </PageWrapper>
   );

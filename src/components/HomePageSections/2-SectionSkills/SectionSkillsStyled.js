@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const SkillsBox = styled.div`
-  outline: 1px solid green;
+export const SkillsBox = styled.div`  
   width: 100%;
   max-width: var(--max-width-s);
   font-size: 16px;
@@ -40,8 +39,7 @@ export const SkillsList = styled.ul`
   }
 `;
 
-export const ImgThumbSkills = styled.div`
-  outline: 1px solid green;
+export const ImgThumbSkills = styled.div`  
   width: 100%;
   max-width: var(--max-width-s);
   height: 250px;
