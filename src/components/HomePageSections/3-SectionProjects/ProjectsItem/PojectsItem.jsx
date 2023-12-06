@@ -5,7 +5,8 @@ import LinkVisitGitHub from "../../../Buttons/LinkVisitGitHub/LinkVisitGitHub";
 
 
 const PojectsItem = ({lang, project}) => {
-    const {name, img, imgAlt, descriptionEng, roleEng, web, gitHub} = project
+    //name
+    const {img, imgAlt, descriptionEng, roleEng, web, gitHub} = project
   return (
     <ProjectItem>
         <ImgThumb>
@@ -13,9 +14,9 @@ const PojectsItem = ({lang, project}) => {
         </ImgThumb>
         <DescriptionBox>
             <p>
-                {descriptionEng}
+                {lang === 'eng'&&descriptionEng}
             </p>
-            <p>{roleEng}</p>
+            <p>{lang === 'eng'&&roleEng}</p>
         </DescriptionBox>
         <LinksBox className="buttonsbox">
             <LinkVisitWeb web={web}/>            
@@ -27,7 +28,7 @@ const PojectsItem = ({lang, project}) => {
 }
 
 PojectsItem.propTypes = {
-    lang: PropTypes.string,
+    lang: PropTypes.string.isRequired,
     project: PropTypes.object.isRequired,
   };
 

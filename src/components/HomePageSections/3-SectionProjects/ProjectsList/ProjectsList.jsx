@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import PojectsItem from "../ProjectsItem/PojectsItem";
 import { projects } from "../../../helpers/projects";
+import PojectsItem from "../ProjectsItem/PojectsItem";
 import { ProjectstList } from "./ProjectListStyled";
 
 const ProjectsList = ({ lang }) => {

@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import { PageWrapper } from "../../styles/CommonUsedTags";
+import { useState } from "react";
+import { useEffect } from "react";
 import SectionHero from "../../components/HomePageSections/1-SectionHero/SectionHero";
 import SectionSkills from "../../components/HomePageSections/2-SectionSkills/SectionSkills";
 import SectionProjects from "../../components/HomePageSections/3-SectionProjects/SectionProjectsWrapper/SectionProjects";
 import SectionDocs from "../../components/HomePageSections/4-SectionDocs/SectionDocs";
-import { useState } from "react";
-import { useEffect } from "react";
+import { PageWrapper } from "../../styles/CommonUsedTags";
 
 
 const HomePage = ({lang}) => {
@@ -32,7 +32,7 @@ const HomePage = ({lang}) => {
       <SectionHero lang={lang} isTablet={isTablet}/>
       <SectionSkills lang={lang} isTablet={isTablet}/>
       <SectionProjects lang={lang}/>
-      {/* <SectionDocs lang={lang}/> */}
+      <SectionDocs lang={lang}/>
     </PageWrapper>
   );
 };
