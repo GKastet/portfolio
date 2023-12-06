@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { SectionS } from "../../../styles/CommonUsedTags";
+import { SectionBox, SectionS } from "../../../styles/CommonUsedTags";
 import {
   FotoIntroduction,
   ImgThumb,
@@ -13,13 +13,12 @@ import Cube from "../../../images/foto/cube.svg";
 import Ellipse from "../../../images/foto/ellipse.svg";
 import Circles from "../../../images/foto/circles.svg";
 
-const SectionHero = ({ isTablet }) => {
-  console.log("isDesktop: ", isTablet);
+const SectionHero = ({ isTablet }) => {  
   return (
     <>
       <SectionS>
         {isTablet ? (
-          <>
+          <SectionBox>
             <TextIntroduction>
               <h1>Hi👋, I’m a full-stack developer</h1>
               <h3>
@@ -48,9 +47,9 @@ const SectionHero = ({ isTablet }) => {
                 <img src={Circles} alt="circles" />
               </PhotoSVG>
             </FotoIntroduction>
-          </>
+          </SectionBox>
         ) : (
-          <>
+          <SectionBox>
             <FotoIntroduction>
               <ImgThumb>
                 <img src={MyFoto} alt="foto Goncharenko" />
@@ -72,15 +71,19 @@ const SectionHero = ({ isTablet }) => {
               </PhotoSVG>
             </FotoIntroduction>
             <TextIntroduction>
-              <h1>Hi👋, I’m a <br />Full-stack developer</h1>
+              <h1>
+                Hi👋, I’m a <br />
+                Full-stack developer
+              </h1>
               <h3>
-                I’m <span>Konstantin Goncharenko</span>, a developer dedicated to making the
-                world a better place one line of code at a time.
+                I’m <span>Konstantin Goncharenko</span>, a developer dedicated
+                to making the world a better place one line of code at a time.
               </h3>
               <a href="mailto:goncharenko.k.mail@gmail.com">Contact me</a>
             </TextIntroduction>
-          </>
+          </SectionBox>
         )}
+        <div id="skills"/>
       </SectionS>
     </>
   );

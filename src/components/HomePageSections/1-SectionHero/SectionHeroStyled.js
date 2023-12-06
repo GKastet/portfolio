@@ -1,26 +1,13 @@
 import styled from "styled-components";
 
-// export const SectionS = styled.section`
-//   outline: 1px solid green;
-//   display: flex;
-//   flex-direction: column;
-
-//   @media (min-width: 744px) {
-//     flex-direction: row;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-// `;
-
 export const TextIntroduction = styled.div`
-  /* outline: 1px solid red; */
   width: 100%;
-  max-width: 320px;
+  max-width: var(--max-width-s);
   display: flex;
   flex-direction: column;
   h1 {
     color: var(--text-color-navy);
-    margin-bottom: 16px;    
+    margin-bottom: 16px;
   }
   h3 {
     color: var(--text-color-navy);
@@ -29,7 +16,7 @@ export const TextIntroduction = styled.div`
       font-weight: 800;
     }
   }
-  a {    
+  a {
     width: 100px;
     margin: auto;
     padding: 10px;
@@ -37,23 +24,23 @@ export const TextIntroduction = styled.div`
     background-color: var(--background-color-red);
     color: var(--text-color-white);
     border-radius: 10px;
-    transition: background-color var(--transition-general), color var(--transition-general);
-    &:hover{
+    transition: background-color var(--transition-general),
+      color var(--transition-general);
+    &:hover {
       scale: 1.02;
       background-color: var(--background-projects);
       color: var(--text-color-red);
     }
   }
 
-  @media (min-width: 1160px) {    
+  @media (min-width: 1160px) {
     max-width: 500px;
   }
 `;
 export const FotoIntroduction = styled.div`
-  /* outline: 1px solid red; */
   position: relative;
   width: 100%;
-  max-width: 320px;
+  max-width: var(--max-width-s);
   height: 320px;
   display: flex;
 
@@ -74,8 +61,6 @@ export const ImgThumb = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* object-fit: contain; */
-    /* object-position: 0% 0%; */
   }
   @media (min-width: 744px) {
     width: 320px;

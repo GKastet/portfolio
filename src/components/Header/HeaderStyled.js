@@ -35,7 +35,7 @@ export const HeaderBox = styled.div`
     height: 83px;
   }
   @media (min-width: 1160px) {    
-    max-width: 1160px;    
+    max-width: 1280px;    
   }
 `;
 

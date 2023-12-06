@@ -17,11 +17,12 @@ export const PageWrapper = styled.main`
 `;
 
 export const SectionS = styled.section`
-  outline: 1px solid green;
-  display: flex;
+  /* outline: 1px solid green; */
+  width: 100%;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 20px; */
   /* padding: 0px 100px; */
 
   &.skills,
@@ -29,24 +30,52 @@ export const SectionS = styled.section`
   &.projects {
     flex-direction: column;
   }
-  /* &.projects {
+  &.projects {
     background-color: var(--background-projects);
     padding: 20px 0;
-  } */
+  }
 
-  @media (min-width: 744px) {
+  /* @media (min-width: 744px) {
     flex-direction: row;
     justify-content: center;
     gap: 0px;
+    justify-content: space-between;
+    align-items: center;
+  } */
+  /* @media (min-width: 1160px) {
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  } */
+`;
+
+export const SectionBox = styled.div`
+  outline: 1px solid red;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  @media (min-width: 744px) {
+    padding: 0 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 910px;
+    gap: 0px;
+    &.skillsbox{
+      gap: 10px;
+    }
     /* justify-content: space-between; */
     /* align-items: center; */
   }
   @media (min-width: 1160px) {
+    width: 100%;
+    max-width: 1280px;
+    justify-content: space-around;
     gap: 20px;
-    /* flex-direction: row;
-    justify-content: center; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
   }
 `;
 

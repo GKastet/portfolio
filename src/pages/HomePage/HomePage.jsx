@@ -30,7 +30,7 @@ const HomePage = ({lang}) => {
   return (
     <PageWrapper className="homePage">      
       <SectionHero lang={lang} isTablet={isTablet}/>
-      <SectionSkills lang={lang}/>
+      <SectionSkills lang={lang} isTablet={isTablet}/>
       {/* <SectionProjects lang={lang}/> */}
       {/* <SectionDocs lang={lang}/> */}
     </PageWrapper>
