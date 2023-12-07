@@ -12,6 +12,7 @@ export const OverlayStyled = styled.div`
 `;
 
 export const ModalContainer = styled.div`
+
   margin-top: 20px;
   outline: 1px solid lightgrey;
   position: absolute;
@@ -20,10 +21,10 @@ export const ModalContainer = styled.div`
   transform: translate(-50%, -50%);
   background-color: var(--text-color-white);
   max-width: 100vw;
-  max-height: 100vh;
+  /* max-height: 100vw; */
   box-sizing: border-box;
   width: 440px;
-  height: 570px;
+  max-height: 614px;
   border-radius: 24px;
   padding: 15px;
   /* overflow: auto; */
