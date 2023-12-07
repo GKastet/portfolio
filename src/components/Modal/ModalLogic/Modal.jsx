@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { docs } from "../../helpers/docs";
 import ModalMarkUp from "../ModalMarkUp/ModalMarkUp";
-import { OverlayStyled } from "./ModalStyled";
+import { ModalContainer, OverlayStyled } from "./ModalStyled";
 
 const modalRoot = document.querySelector("#modal-root");
 
@@ -55,14 +55,14 @@ export const Modal = ({ isOpen, setIsOpen, docId }) => {
   return createPortal(
     <>
       <OverlayStyled onClick={handleClickOverlay}>
-        <div>
+        <ModalContainer>
           {isOpen && (
             <ModalMarkUp
               docItem={docItem}
               handleClickBtnClose={handleClickBtnClose}
             />
           )}
-        </div>
+        </ModalContainer>
       </OverlayStyled>
     </>,
     modalRoot

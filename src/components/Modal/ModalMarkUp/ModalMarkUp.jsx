@@ -6,12 +6,12 @@ const ModalMarkUp = ({ docItem, handleClickBtnClose }) => {
   console.log("docItem: ", docItem);
   const { docTitle, docImg } = docItem;
   return (
-    <div>
+    <ModalContainer>
       <BtnCloseModal handleClickBtnClose={handleClickBtnClose} />
       <ImgThumb>
         <img src={docImg} alt={docTitle.eng} />
       </ImgThumb>
-    </div>
+    </ModalContainer>
   );
 };
 

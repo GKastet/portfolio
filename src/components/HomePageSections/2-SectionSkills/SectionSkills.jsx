@@ -57,7 +57,7 @@ const SectionSkills = ({ lang, isTablet }) => {
                   "I have an experience in the following web technologies:"}
                 {lang === "sk" &&
                   "Mám skúsenosti s nasledujúcimi webovými technológiami:"}
-                {lang === "ua" && "У мене досвід у наступних веб технологіях:"}
+                {lang === "ua" && "У мене є досвід у наступних веб технологіях:"}
               </p>
               <SkillsList>
                 {skills.map((skill) => {

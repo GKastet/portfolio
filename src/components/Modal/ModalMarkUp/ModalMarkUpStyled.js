@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-export const ModalContainer = styled.div`
-  /* margin-top: 24px; */
-  /* display: flex;
-  flex-direction: column; */
-  /* position: relative; */
+export const ModalContainer = styled.div`  
+  position: relative;
 `
 
 export const ImgThumb = styled.div`
