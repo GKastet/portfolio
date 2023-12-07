@@ -9,6 +9,7 @@ import FScoursePDF from './docs/Full-Stack course.pdf'
 
 export const docs = [
   {
+    id: 1,
     docTitle: {
       eng: "Resume",
       sk: "Životopis",
@@ -18,6 +19,7 @@ export const docs = [
     path: cvPDF,
   },
   {
+    id: 2,
     docTitle: {
       eng: "Full-stack certificate",
       sk: "Full-stack certifikát",
@@ -27,6 +29,7 @@ export const docs = [
     path: FSCertificatePDF,
   },
   {
+    id: 3,
     docTitle: {
       eng: "Full-stack course",
       sk: "Full-stack kurz",

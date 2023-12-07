@@ -9,8 +9,8 @@ import { useState } from "react";
 import Modal from "../../../Modal/ModalLogic/Modal";
 
 const SectionDocs = ({ lang }) => {
-  const [isOpen, setIsOpen] = useState(false)
-  console.log('isOpen: ', isOpen);
+  const [isOpen, setIsOpen] = useState(false);
+  const [docId, setDocId] = useState(null);
   return (
     <SectionS className="docs">
       <SectionTitle>
@@ -19,9 +19,9 @@ const SectionDocs = ({ lang }) => {
         {lang === "ua" && "Документи"}
       </SectionTitle>
       <SectionBox className="docsbox">
-        <DocsList lang={lang} setIsOpen={setIsOpen}/>
+        <DocsList lang={lang} setIsOpen={setIsOpen} setDocId={setDocId} />
       </SectionBox>
-      {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen}/>}
+      {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen} docId={docId} />}
     </SectionS>
   );
 };

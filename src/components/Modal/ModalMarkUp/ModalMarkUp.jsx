@@ -1,9 +1,23 @@
+import PropTypes from "prop-types";
+import { ImgThumb, ModalContainer } from "./ModalMarkUpStyled";
+import BtnCloseModal from "../../Buttons/BtnCloseModal/BtnCloseModal";
 
-
-const ModalMarkUp = () => {
+const ModalMarkUp = ({ docItem, handleClickBtnClose }) => {
+  console.log("docItem: ", docItem);
+  const { docTitle, docImg } = docItem;
   return (
-    <div>ModalMarkUp</div>
-  )
-}
+    <div>
+      <BtnCloseModal handleClickBtnClose={handleClickBtnClose} />
+      <ImgThumb>
+        <img src={docImg} alt={docTitle.eng} />
+      </ImgThumb>
+    </div>
+  );
+};
 
-export default ModalMarkUp
+ModalMarkUp.propTypes = {
+  docItem: PropTypes.object.isRequired,
+  handleClickBtnClose: PropTypes.func.isRequired,
+};
+
+export default ModalMarkUp;

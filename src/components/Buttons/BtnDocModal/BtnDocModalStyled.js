@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MdZoomOutMap } from "react-icons/md";
 
 export const ButtonS = styled.button`
-  background-color: transparent;
+  background-color: transparent;  
 `;
 
 export const IconZoomDoc = styled(MdZoomOutMap)`
