@@ -1,12 +1,17 @@
 import quizMasterImg from '../../images/projectsFoto/quiz-masterW.webp'
+import reactNativeImg from '../../images/projectsFoto/reactNativeW.webp'
 import moneyGuardImg from '../../images/projectsFoto/money-guardW.webp'
 import bookShelfImg from '../../images/projectsFoto/book-shelfW.webp'
-
+import freshBoxImg from '../../images/projectsFoto/freshBox.webp'
+import cubeImg from '../../images/projectsFoto/cubeW.webp'
+import {skills} from './skills'
+// console.log('skills: ', skills);
 
 export const projects = [
     {        
         id: 1,
         name: "Quiz Master",
+        skills:[skills[2], skills[10], skills[20]],//Node.js, MongoDB, Swagger        
         img: quizMasterImg,
         imgAlt: "Quiz Master",
         descriptionEng: " Application where you can try any quiz or create own quiz. Adopted for desktop, tablet, mobile.",
@@ -20,7 +25,23 @@ export const projects = [
     },
     {        
         id: 2,
+        name: "React Native",
+        skills:[skills[6], skills[5], skills[21]],//ReactNative, Redux, Firebase
+        img: reactNativeImg,
+        imgAlt: "Money guard image",
+        descriptionEng: "Register, make a photo, add gps coordinates, write a comment, like a photo!",
+        descriptionSk: "Zaregistrujte sa, urobte fotku, pridajte gps súradnice, napíšte komentár, lajkujte fotku!",
+        descriptionUa: "Зареєструйся, зроби фото, додай gps координати, напиши коментар, лайкни фото!",
+        roleEng: "Role: Developer",
+        roleSk: "Rola: Vývojár",
+        roleUa: "Роль: Розробник",
+        web: 'https://github.com/GKastet/goit-Native',
+        gitHub: 'https://github.com/GKastet/goit-Native'
+    },
+    {        
+        id: 3,
         name: "Money Guard",
+        skills:[skills[20], skills[3], skills[5]],//Swagger, React, Redux
         img: moneyGuardImg,
         imgAlt: "Money guard image",
         descriptionEng: "Application which helps to control your incomes and expenses, see statistics etc. Adopted for desktop, tablet, mobile.",
@@ -33,8 +54,9 @@ export const projects = [
         gitHub: 'https://github.com/GKastet/ITArt'
     },
     {        
-        id: 3,
+        id: 4,
         name: "Book shelf",
+        skills:[skills[4], skills[16], skills[0]],//JS, Responsive, HTML
         img: bookShelfImg,
         imgAlt: "Book shelf image",
         descriptionEng: "A website where you can choose a book, read short description, and visit a shop for buying. Adopted for desktop, tablet, mobile.",        
@@ -46,14 +68,34 @@ export const projects = [
         web: 'https://gkastet.github.io/Bookshelf/',
         gitHub: 'https://github.com/GKastet/Bookshelf'
     },
-    
-    // {        
-    //     id: 1,
-    //     name: "School",
-    //     img: "",
-    //     imgAlt: "School image",
-    //     web: 'https://gkastet.github.io/school/',
-    //     gitHub: 'https://github.com/GKastet/school'
-    // },
-
+    {        
+        id: 5,
+        name: "Fresh box",
+        skills:[skills[0], skills[1], skills[18]],//HTML, CSS, Bootstrap
+        img: freshBoxImg,
+        imgAlt: "Fresh box image",
+        descriptionEng: "Fresh harvest box is your one-stop place for a delicious fruit basket. Adopted for desktop, tablet, mobile.",        
+        descriptionSk: "Fresh harvest box je miestom, kde si na jednom mieste nájdete košík s lahodným ovocím. Prispôsobene pre desktop, tablet, mobil.",
+        descriptionUa: "Кошик, у який в одному місці можна зібрати найкращі фрукти. Адаптовано для десктопів, планшетів, мобільних пристроїв.",
+        roleEng: "Role: Developer",
+        roleSk: "Rola: Vývojár",
+        roleUa: "Роль: Розробник",
+        web: 'https://superstasss.github.io/bigfatapp/',
+        gitHub: 'https://github.com/SuperStasss/bigfatapp'
+    },
+    {        
+        id: 6,
+        name: "Cube",
+        skills:[skills[3], skills[7], skills[13]],//React, Vite, StyledComponents
+        img: cubeImg,
+        imgAlt: "Cube image",
+        descriptionEng: "Try to collect all smiles 😉",
+        descriptionSk: "Skúste si pozbierať všetky úsmevy 😉",
+        descriptionUa: "Спробуй зібрати усі смайліки 😉",
+        roleEng: "Role: Developer",
+        roleSk: "Rola: Vývojár",
+        roleUa: "Роль: Розробник",
+        web: 'https://gkastet.github.io/test-eh/',
+        gitHub: 'https://github.com/GKastet/test-eh'
+    },
 ]

@@ -12,7 +12,6 @@ export const OverlayStyled = styled.div`
 `;
 
 export const ModalContainer = styled.div`
-
   margin-top: 20px;
   outline: 1px solid lightgrey;
   position: absolute;

@@ -31,11 +31,33 @@ export const docs = [
   {
     id: 3,
     docTitle: {
-      eng: "Full-stack course",
-      sk: "Full-stack kurz",
-      ua: "Full-stack курс",
+      eng: "Full-stack course_1",
+      sk: "Full-stack kurz_1",
+      ua: "Full-stack курс_1",
     },
     docImg: FScourseImg1,
+    docImgArr: [FScourseImg1, FScourseImg2, FScourseImg3],
+    path: FScoursePDF,
+  },
+  {
+    id: 4,
+    docTitle: {
+      eng: "Full-stack course_2",
+      sk: "Full-stack kurz_2",
+      ua: "Full-stack курс_2",
+    },
+    docImg: FScourseImg2,
+    docImgArr: [FScourseImg1, FScourseImg2, FScourseImg3],
+    path: FScoursePDF,
+  },
+  {
+    id: 5,
+    docTitle: {
+      eng: "Full-stack course_3",
+      sk: "Full-stack kurz_3",
+      ua: "Full-stack курс_3",
+    },
+    docImg: FScourseImg3,
     docImgArr: [FScourseImg1, FScourseImg2, FScourseImg3],
     path: FScoursePDF,
   },

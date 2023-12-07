@@ -4,6 +4,7 @@ import {
   ImgThumb,
   LinksBox,
   ProjectItem,
+  UsedSkillsList,
 } from "./ProjectsItemStyled";
 import LinkVisitWeb from "../../../Buttons/LinkVisitWeb/LinkVisitWeb";
 import LinkVisitGitHub from "../../../Buttons/LinkVisitGitHub/LinkVisitGitHub";
@@ -11,6 +12,7 @@ import LinkVisitGitHub from "../../../Buttons/LinkVisitGitHub/LinkVisitGitHub";
 const PojectsItem = ({ lang, project }) => {
   const {
     name,
+    skills,    
     img,
     imgAlt,
     descriptionEng,
@@ -22,13 +24,29 @@ const PojectsItem = ({ lang, project }) => {
     web,
     gitHub,
   } = project;
+  
   return (
     <ProjectItem>
       <ImgThumb>
         <img src={img} alt={imgAlt} />
       </ImgThumb>
       <DescriptionBox>
-        <p>{name}</p>
+        <p style={{fontWeight: "bold"}}>{name}</p>
+        <UsedSkillsList>
+          {skills.map(skill=> {
+            return(
+              <li key={skill.name}>
+                <div>
+                  <img src={skill.svg} alt={skill.name} />
+                </div>
+              </li>
+            )
+          })}
+          <p>{lang === 'eng'&&'etc.'}
+          {lang === 'sk'&&'atd.'}
+          {lang === 'ua'&&'та ін.'}</p>
+
+        </UsedSkillsList>
         <p>
           {lang === "eng" && descriptionEng}
           {lang === "sk" && descriptionSk}

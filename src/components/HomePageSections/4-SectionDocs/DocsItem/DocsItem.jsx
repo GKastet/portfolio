@@ -4,9 +4,9 @@ import BtnDocModal from "../../../Buttons/BtnDocModal/BtnDocModal";
 import BtnDocLoad from "../../../Buttons/BtnDocLoad/BtnDocLoad";
 
 const DocsItem = ({ lang, doc, setIsOpen, setDocId }) => {
-  const { id, docTitle, docImg, path } = doc;
+  const { id, docTitle, docImg } = doc;
   return (
-    <DocItem key={path}>
+    <DocItem>
       <ImgThumb>
         <img src={docImg} alt={docTitle.eng} />
       </ImgThumb>

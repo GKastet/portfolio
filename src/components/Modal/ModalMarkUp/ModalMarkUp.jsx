@@ -2,8 +2,7 @@ import PropTypes from "prop-types";
 import { ImgThumb, ModalContainer } from "./ModalMarkUpStyled";
 import BtnCloseModal from "../../Buttons/BtnCloseModal/BtnCloseModal";
 
-const ModalMarkUp = ({ docItem, handleClickBtnClose }) => {
-  console.log("docItem: ", docItem);
+const ModalMarkUp = ({ docItem, handleClickBtnClose }) => {  
   const { docTitle, docImg } = docItem;
   return (
     <ModalContainer>

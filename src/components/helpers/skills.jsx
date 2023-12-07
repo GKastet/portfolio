@@ -19,8 +19,7 @@ import VSCode from '../../images/skills/vscode.svg'
 import Bootstrap from '../../images/skills/bootstrap.svg'
 import Figma from '../../images/skills/figma.svg'
 import Swagger from '../../images/skills/swagger.svg'
-
-
+import Firebase from '../../images/skills/firebase.svg'
 
 export const skills = [
   {
@@ -107,12 +106,8 @@ export const skills = [
       name: 'Swagger',
       svg: Swagger,
   },
-  // {
-  //     name: 'Postman',
-  //     svg: '../../../imgs/skills/postman.svg'
-  // },
-  // {
-  //     name: 'Postman',
-  //     svg: '../../../imgs/skills/postman.svg'
-  // }
+  {
+      name: 'Firebase',
+      svg: Firebase
+  },  
 ];

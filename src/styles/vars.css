@@ -14,6 +14,7 @@
     --background-projects: #343D68;
     --background-projects-item: #262C4D;
     --background-color-red: #E84949;
+    --background-project-item: rgb(214, 247, 246);
 
     --backdrop-background: rgba(34, 13, 91, 0.23);
     
@@ -25,6 +26,7 @@
     --text-color-violet:rgb(85, 26, 139);
     --text-color-blue: #36369f;
     
+    --fill-color-navy: #343D68;
     --fill-color-blue: #36369f;
     --fill-color-white: #fff;
     --fill-color-red: #E84949;
@@ -35,6 +37,4 @@
     --page-padding-m: 0 15px;
 
     --max-width-s: 320px;
-
-
 }

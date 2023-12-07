@@ -7,7 +7,7 @@ const DocsList = ({ lang, setIsOpen, setDocId }) => {
   return (
     <DocumentsList>
       {docs.map(doc => {        
-        return <DocsItem key={doc.path} lang={lang} doc={doc} setIsOpen={setIsOpen} setDocId={setDocId}/>;
+        return <DocsItem key={doc.id} lang={lang} doc={doc} setIsOpen={setIsOpen} setDocId={setDocId}/>;
       })}
     </DocumentsList>
   );
