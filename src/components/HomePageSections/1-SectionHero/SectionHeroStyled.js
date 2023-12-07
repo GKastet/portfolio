@@ -50,12 +50,12 @@ export const FotoIntroduction = styled.div`
 `;
 
 export const ImgThumb = styled.div`
-  outline: 1px solid green;
+  outline: 1px solid var(--background-header);
   width: 234px;
   height: 280px;
   margin: auto;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 10px;
   img {
     width: 100%;
     height: 100%;
