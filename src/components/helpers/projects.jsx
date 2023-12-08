@@ -56,7 +56,7 @@ export const projects = [
     {        
         id: 4,
         name: "Book shelf",
-        skills:[skills[4], skills[16], skills[0]],//JS, Responsive, HTML
+        skills:[skills[4], skills[21], skills[9]],//JS, FireBase, JSON
         img: bookShelfImg,
         imgAlt: "Book shelf image",
         descriptionEng: "A website where you can choose a book, read short description, and visit a shop for buying. Adopted for desktop, tablet, mobile.",        
@@ -71,7 +71,7 @@ export const projects = [
     {        
         id: 5,
         name: "Fresh box",
-        skills:[skills[0], skills[1], skills[18]],//HTML, CSS, Bootstrap
+        skills:[skills[0], skills[1], skills[16]],//HTML, CSS, Responsive
         img: freshBoxImg,
         imgAlt: "Fresh box image",
         descriptionEng: "Fresh harvest box is your one-stop place for a delicious fruit basket. Adopted for desktop, tablet, mobile.",        
