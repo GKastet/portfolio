@@ -2,8 +2,9 @@ import quizMasterImg from '../../images/projectsFoto/quiz-masterW.webp'
 import reactNativeImg from '../../images/projectsFoto/reactNativeW.webp'
 import moneyGuardImg from '../../images/projectsFoto/money-guardW.webp'
 import bookShelfImg from '../../images/projectsFoto/book-shelfW.webp'
-import freshBoxImg from '../../images/projectsFoto/freshBox.webp'
+import freshBoxImg from '../../images/projectsFoto/freshBoxW.webp'
 import cubeImg from '../../images/projectsFoto/cubeW.webp'
+import imageFinderImg from '../../images/projectsFoto/image-finderW.webp'
 import {skills} from './skills'
 // console.log('skills: ', skills);
 
@@ -97,5 +98,20 @@ export const projects = [
         roleUa: "Роль: Розробник",
         web: 'https://gkastet.github.io/test-eh/',
         gitHub: 'https://github.com/GKastet/test-eh'
+    },
+    {        
+        id: 7,
+        name: "Image finder",
+        skills:[skills[3], skills[15], skills[13]],//React, Axios, StyledComponents
+        img: imageFinderImg,
+        imgAlt: "Image finder image",
+        descriptionEng: "Type a word - get a set of great pictures 😎!",
+        descriptionSk: "Napíšte slovo – získajte sadu obrázkov 😎",
+        descriptionUa: "Введи слово - отримуй набір картинок 😎!",
+        roleEng: "Role: Developer",
+        roleSk: "Rola: Vývojár",
+        roleUa: "Роль: Розробник",
+        web: 'https://gkastet.github.io/goit-react-hw-04-images/',
+        gitHub: 'https://github.com/GKastet/goit-react-hw-04-images'
     },
 ]
