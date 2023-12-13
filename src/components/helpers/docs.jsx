@@ -1,13 +1,9 @@
-// import cvImg from "../../images/docsfoto/cvW.webp";
 import cvImg from "../../images/docsfoto/cv-photoW.webp";
 import cvPDF from "./docs/Konstantin Goncharenko_CV.pdf";
 import FSCertificateImg from '../../images/docsfoto/FSCertificateW.webp'
 import FSCertificatePDF from './docs/Full-Stack certificate.pdf'
-// import FScourseImg1 from '../../images/docsfoto/FScourse1W.webp'
 import FScourseImg1 from '../../images/docsfoto/foto-FScourse1W.webp'
-// import FScourseImg2 from '../../images/docsfoto/FScourse2W.webp'
 import FScourseImg2 from '../../images/docsfoto/foto-FScourse2W.webp'
-// import FScourseImg3 from '../../images/docsfoto/FScourse3W.webp'
 import FScourseImg3 from '../../images/docsfoto/foto-FScourse3W.webp'
 import FScoursePDF from './docs/Full-Stack course.pdf'
 
