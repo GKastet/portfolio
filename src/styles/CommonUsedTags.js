@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const PageWrapper = styled.main`
   /* outline: 1px solid yellow; */
   margin-top: 50px;  
-  padding: 70px 0px;
+  padding: 70px 0px 50px;
 
   &.homePage {
     display: flex;

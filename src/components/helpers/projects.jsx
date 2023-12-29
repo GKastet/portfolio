@@ -1,3 +1,4 @@
+import autoInsImg from '../../images/projectsFoto/auto-insW.webp'
 import quizMasterImg from '../../images/projectsFoto/quiz-masterW.webp'
 import reactNativeImg from '../../images/projectsFoto/reactNativeW.webp'
 import moneyGuardImg from '../../images/projectsFoto/money-guardW.webp'
@@ -11,11 +12,26 @@ import {skills} from './skills'
 export const projects = [
     {        
         id: 1,
+        name: "Auto Insurance",
+        skills:[skills[7], skills[15], skills[12]],//Vite, Axios, MUI
+        img: autoInsImg,
+        imgAlt: "Auto insurance",
+        descriptionEng: "An application in which you can issue auto insurance online. Adopted for desktop, tablet, mobile.",
+        descriptionSk: "Aplikácia, v ktorej môžete vybaviť poistenie auta online. Prispôsobene pre desktop, tablet, mobil.",
+        descriptionUa: "Застосунок, в якому можна оформити автоцивілку онлайн. Адаптовано для десктопів, планшетів, мобільних пристроїв.",
+        roleEng: "Role: Devepoler",
+        roleSk: "Rola: Vývojár ",
+        roleUa: "Роль: Розробник",
+        web: 'https://www.auto-ins.com.ua/',
+        gitHub: 'https://github.com/apazient/auto-ins'
+    },
+    {        
+        id: 2,
         name: "Quiz Master",
         skills:[skills[2], skills[10], skills[20]],//Node.js, MongoDB, Swagger        
         img: quizMasterImg,
         imgAlt: "Quiz Master",
-        descriptionEng: " Application where you can try any quiz or create own quiz. Adopted for desktop, tablet, mobile.",
+        descriptionEng: "Application where you can try any quiz or create own quiz. Adopted for desktop, tablet, mobile.",
         descriptionSk: "Aplikácia, kde si môžete vyskúšať akýkoľvek kvíz alebo vytvoriť vlastný kvíz. Prispôsobene pre desktop, tablet, mobil.",
         descriptionUa: "Застосунок, в якому Ви можете спробувати будь-який квіз або створити власний. Адаптовано для десктопів, планшетів, мобільних пристроїв.",
         roleEng: "Role: Devepoler",
@@ -25,7 +41,7 @@ export const projects = [
         gitHub: 'https://github.com/Stepaniuk-Den/quiz-master'
     },
     {        
-        id: 2,
+        id: 3,
         name: "React Native",
         skills:[skills[6], skills[5], skills[21]],//ReactNative, Redux, Firebase
         img: reactNativeImg,
@@ -40,7 +56,7 @@ export const projects = [
         gitHub: 'https://github.com/GKastet/goit-Native'
     },
     {        
-        id: 3,
+        id: 4,
         name: "Money Guard",
         skills:[skills[20], skills[3], skills[5]],//Swagger, React, Redux
         img: moneyGuardImg,
@@ -55,7 +71,7 @@ export const projects = [
         gitHub: 'https://github.com/GKastet/ITArt'
     },
     {        
-        id: 4,
+        id: 5,
         name: "Book shelf",
         skills:[skills[4], skills[21], skills[9]],//JS, FireBase, JSON
         img: bookShelfImg,
@@ -70,7 +86,7 @@ export const projects = [
         gitHub: 'https://github.com/GKastet/Bookshelf'
     },
     {        
-        id: 5,
+        id: 6,
         name: "Fresh box",
         skills:[skills[0], skills[1], skills[16]],//HTML, CSS, Responsive
         img: freshBoxImg,
@@ -85,7 +101,7 @@ export const projects = [
         gitHub: 'https://github.com/SuperStasss/bigfatapp'
     },
     {        
-        id: 6,
+        id: 7,
         name: "Cube",
         skills:[skills[3], skills[7], skills[13]],//React, Vite, StyledComponents
         img: cubeImg,
@@ -100,7 +116,7 @@ export const projects = [
         gitHub: 'https://github.com/GKastet/test-eh'
     },
     {        
-        id: 7,
+        id: 8,
         name: "Image finder",
         skills:[skills[3], skills[15], skills[13]],//React, Axios, StyledComponents
         img: imageFinderImg,
