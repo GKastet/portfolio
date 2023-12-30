@@ -20,28 +20,8 @@ transition: border var(--transition-general), color var(--transition-general);
 
 &:hover{
     border: 1px solid var(--text-color-red);
-    color: var(--text-color-red);
-    /* background-color: transparent; */
-}
-  /* width: 100%;
-  max-width: 335px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 13px 16px;
-  border-radius: 30px;
-  border: 1px solid var(--border-color-30);
-  background-color: transparent;
-  color: var(--text-color-100);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.29;
-  letter-spacing: -0.14px;
-  
-   */
+    color: var(--text-color-red);  
+}  
 `;
 
 

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import {  useState, useRef, useEffect } from "react";
 import { languages } from "../../helpers/languages";
 import {
   ButtonStyled,
@@ -7,8 +7,6 @@ import {
   LanguageList,
   SelectWrapper,
 } from "./SelectLangStyled";
-import { useRef } from "react";
-import { useEffect } from "react";
 
 const SelectLang = ({ lang, changeLanguage }) => {
   const [openSelect, setOpenSelect] = useState(false);
