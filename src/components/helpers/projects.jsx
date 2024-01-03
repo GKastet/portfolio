@@ -87,18 +87,18 @@ export const projects = [
     },
     {        
         id: 6,
-        name: "Fresh box",
-        skills:[skills[0], skills[1], skills[16]],//HTML, CSS, Responsive
-        img: freshBoxImg,
-        imgAlt: "Fresh box image",
-        descriptionEng: "Fresh harvest box is your one-stop place for a delicious fruit basket. Adopted for desktop, tablet, mobile.",        
-        descriptionSk: "Fresh harvest box je miestom, kde si na jednom mieste nájdete košík s lahodným ovocím. Prispôsobene pre desktop, tablet, mobil.",
-        descriptionUa: "Кошик, у який в одному місці можна зібрати найкращі фрукти. Адаптовано для десктопів, планшетів, мобільних пристроїв.",
+        name: "Image finder",
+        skills:[skills[3], skills[15], skills[13]],//React, Axios, StyledComponents
+        img: imageFinderImg,
+        imgAlt: "Image finder image",
+        descriptionEng: "Type a word - get a set of great pictures 😎!",
+        descriptionSk: "Napíšte slovo – získajte sadu obrázkov 😎",
+        descriptionUa: "Введи слово - отримуй набір картинок 😎!",
         roleEng: "Role: Developer",
         roleSk: "Rola: Vývojár",
         roleUa: "Роль: Розробник",
-        web: 'https://superstasss.github.io/bigfatapp/',
-        gitHub: 'https://github.com/SuperStasss/bigfatapp'
+        web: 'https://gkastet.github.io/goit-react-hw-04-images/',
+        gitHub: 'https://github.com/GKastet/goit-react-hw-04-images'
     },
     {        
         id: 7,
@@ -117,17 +117,17 @@ export const projects = [
     },
     {        
         id: 8,
-        name: "Image finder",
-        skills:[skills[3], skills[15], skills[13]],//React, Axios, StyledComponents
-        img: imageFinderImg,
-        imgAlt: "Image finder image",
-        descriptionEng: "Type a word - get a set of great pictures 😎!",
-        descriptionSk: "Napíšte slovo – získajte sadu obrázkov 😎",
-        descriptionUa: "Введи слово - отримуй набір картинок 😎!",
+        name: "Fresh box",
+        skills:[skills[0], skills[1], skills[16]],//HTML, CSS, Responsive
+        img: freshBoxImg,
+        imgAlt: "Fresh box image",
+        descriptionEng: "Fresh harvest box is your one-stop place for a delicious fruit basket. Adopted for desktop, tablet, mobile.",        
+        descriptionSk: "Fresh harvest box je miestom, kde si na jednom mieste nájdete košík s lahodným ovocím. Prispôsobene pre desktop, tablet, mobil.",
+        descriptionUa: "Кошик, у який в одному місці можна зібрати найкращі фрукти. Адаптовано для десктопів, планшетів, мобільних пристроїв.",
         roleEng: "Role: Developer",
         roleSk: "Rola: Vývojár",
         roleUa: "Роль: Розробник",
-        web: 'https://gkastet.github.io/goit-react-hw-04-images/',
-        gitHub: 'https://github.com/GKastet/goit-react-hw-04-images'
+        web: 'https://superstasss.github.io/bigfatapp/',
+        gitHub: 'https://github.com/SuperStasss/bigfatapp'        
     },
 ]
