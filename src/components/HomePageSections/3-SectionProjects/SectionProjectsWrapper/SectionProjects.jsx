@@ -6,7 +6,7 @@ import {
 } from "../../../../styles/CommonUsedTags";
 import ProjectsList from "../ProjectsList/ProjectsList";
 
-const SectionProjects = ({ lang }) => {
+const SectionProjects = ({ lang }) => {  
   return (
     <SectionS className="projects">
       <SectionTitle>

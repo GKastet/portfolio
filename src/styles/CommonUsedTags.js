@@ -29,7 +29,7 @@ export const SectionS = styled.section`
   }  
 `;
 
-export const SectionBox = styled.div`  
+export const SectionBox = styled.div`
   width: 100%;
   margin: auto;
   display: flex;

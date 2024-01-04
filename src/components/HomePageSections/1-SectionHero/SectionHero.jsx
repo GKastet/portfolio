@@ -14,7 +14,7 @@ import Cube from "../../../images/foto/cube.svg";
 import Ellipse from "../../../images/foto/ellipse.svg";
 import Circles from "../../../images/foto/circles.svg";
 
-const SectionHero = ({ lang, isTablet }) => {
+const SectionHero = ({ lang, isTablet }) => {  
   const { title, myname, about } = introduction;
   return (
     <>
